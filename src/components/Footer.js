@@ -1,7 +1,11 @@
 import React from "react";
+import "./Footer.css";
 
 function Footer() {
-  return <h6>Copyright &copy; Shiva </h6>;
+  return( 
+  <div class="footer">
+  <p>Copyright &copy; Shiva </p>
+</div>);
 }
 
 export default Footer;

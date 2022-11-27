@@ -1,0 +1,13 @@
+.content {
+    min-height: 100vh;
+    border: 3px;
+    box-sizing: border-box;
+}
+  
+  .column {
+    float: left;
+    width: 33.33%;
+    padding: 15px;
+    min-height: 100vh;
+  }
+

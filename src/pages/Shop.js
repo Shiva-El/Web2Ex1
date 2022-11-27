@@ -1,13 +1,12 @@
 import Page from "../components/Page";
 import React from "react";
 
-const Contact = () => {
+const Shop = () => {
   return (
     <div inline align="center">
-      <h4>ContactUs page</h4>
+      <h4>Shopping Bag Page</h4>
       <Page />
     </div>
   );
 };
-
-  export default Contact;
+  export default Shop;

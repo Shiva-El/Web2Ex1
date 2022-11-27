@@ -1,19 +1,25 @@
 /* Specific styles for non-active links */
 .link-inactive {
-    border-radius: 4px;
-    padding: 6px 10px;
-    margin-right: 10px;
-    color: #545e6f;
-    background: #f0f0f0
-    }
-    /* Specific styles for active links */
+  border-radius: 4px;
+  padding: 6px 10px;
+  margin-right: 10px;
+  color: #545e6f;
+  background: #f0f0f0;
+}
+/* Specific styles for active links */
 .link-active {
-    border-radius: 4px;
-    padding: 6px 10px;
-    margin-right: 10px;
-    color: #fff;
-    background: #7600dc;
-    }
+  border-radius: 4px;
+  padding: 6px 10px;
+  margin-right: 10px;
+  color: #fff;
+  background: #7600dc;
+}
 .nav {
-        margin-bottom: 25px;
-      }
+  background-color: #f1f1f1;
+  text-align: center;
+  padding: 20px;
+}
+.logo {
+  margin-right: 10px;
+  margin-left: 10px;
+}

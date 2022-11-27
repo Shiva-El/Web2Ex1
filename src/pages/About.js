@@ -1,5 +1,13 @@
+import Page from "../components/Page";
+import React from "react";
+
 const About = () => {
-    return <h1>About Us</h1>;
-  };
-  
-  export default About;
+  return (
+    <div inline align="center">
+      <h4>AboutUs page</h4>
+      <Page />
+    </div>
+  );
+};
+
+export default About;

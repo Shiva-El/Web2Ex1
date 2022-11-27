@@ -1,30 +1,47 @@
-import React, { useState, useEffect } from "react";
-import { DisplayMessage } from "./DisplayMessage";
-import { Clock } from "./Clock";
-import { CounterDisplay } from "./CounterDisplay";
-import { UserActions } from "./UserActions";
+import React from "react";
+import { Button } from '@mui/material';
+import "./Main.css";
+import "./ShopButton.js";
 
 export function Main() {
-  const [color, setColor] = useState(
-    JSON.parse(sessionStorage.getItem("color")) || "blue"
-  );
-  const [count, setCount] = useState(
-    JSON.parse(localStorage.getItem("count")) || 0
-  );
-  useEffect(() => {
-    sessionStorage.setItem("color", JSON.stringify(color));
-    localStorage.setItem("count", JSON.stringify(count));
-  }, [color, count]);
   return (
-    <div>
-      <DisplayMessage color={color} />
-      <Clock />
-      <CounterDisplay count={count} />
-      <UserActions
-        setColor={setColor}
-        setCount={setCount}
-        count={count}
-        color={color} />
+    <div class="content">
+      <div class="column">
+        <h2>Product_one</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit
+          amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget
+          elementum magna tristique. Quisque vehicula, risus eget aliquam
+          placerat, purus leo tincidunt eros, eget luctus quam orci in velit.
+          Praesent scelerisque tortor sed accumsan convallis.
+        </p>
+        <Button variant="outlined" href="/Shop">Add to Cart</Button>
+
+      </div>
+
+      <div class="column">
+        <h2>Product_Two</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit
+          amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget
+          elementum magna tristique. Quisque vehicula, risus eget aliquam
+          placerat, purus leo tincidunt eros, eget luctus quam orci in velit.
+          Praesent scelerisque tortor sed accumsan convallis.
+        </p>
+        <Button variant="outlined" href="/Shop">Add to Cart</Button>
+      </div>
+
+      <div class="column">
+        <h2>Product_Three</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit
+          amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget
+          elementum magna tristique. Quisque vehicula, risus eget aliquam
+          placerat, purus leo tincidunt eros, eget luctus quam orci in velit.
+          Praesent scelerisque tortor sed accumsan convallis.
+        </p>
+        <Button variant="outlined" href="/Shop">Add to Cart</Button>
+      </div>
     </div>
   );
 }

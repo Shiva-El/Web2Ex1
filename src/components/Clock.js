@@ -9,5 +9,5 @@ export function Clock() {
       clearInterval(interval);
     };
   }, [time]);
-  return <p>React Clock: {time} </p>;
+  return <p>It's {time} in Montreal</p>;
 }

@@ -1,5 +1,13 @@
+import Page from "../components/Page";
+import React from "react";
+
 const Content = () => {
-    return <h1>Content</h1>;
-  };
+  return (
+    <div inline align="center">
+      <h4>Content page</h4>
+      <Page />
+    </div>
+  );
+};
   
   export default Content;
